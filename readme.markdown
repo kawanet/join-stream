@@ -31,7 +31,7 @@ abc,def,hi,jkl
 var joinStream = require('join-stream')
 ```
 
-## joinStream(sep, opts={})
+## joinStream(sep='\n', opts={})
 
 Return a [through stream](https://github.com/substack/stream-handbook#through)
 that inserts the string or buffer separator `sep` between `'data'` chunks.
