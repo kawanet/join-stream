@@ -1,5 +1,5 @@
 var joinStream = require('../');
-var split = require('es').split;
+var split = require('event-stream').split;
 
 process.stdin
     .pipe(split())

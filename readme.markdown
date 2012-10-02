@@ -6,7 +6,7 @@ Intersperse stream chunks with separators.
 
 ``` js
 var joinStream = require('join-stream');
-var split = require('es').split;
+var split = require('event-stream').split;
 
 process.stdin
     .pipe(split())
@@ -16,12 +16,7 @@ process.stdin
 ```
 
 ```
-$ node example/comma.js
-abc
-def
-hi
-jkl
-^D
+$ echo -e 'abc\ndef\nhi\njkl' | node example/comma.js
 abc,def,hi,jkl
 ```
 
