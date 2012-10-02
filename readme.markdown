@@ -2,6 +2,8 @@
 
 Intersperse stream chunks with separators.
 
+[![build status](https://secure.travis-ci.org/substack/join-stream.png)](http://travis-ci.org/substack/join-stream)
+
 # example
 
 ``` js
