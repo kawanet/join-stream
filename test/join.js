@@ -24,6 +24,6 @@ test('join a split stream', function (t) {
         .pipe(ws)
     ;
     
-    rs.emit('data', 'abc\ndef\nhi\njkl\n');
+    rs.emit('data', 'abc\ndef\nhi\njkl');
     rs.emit('end');
 });
